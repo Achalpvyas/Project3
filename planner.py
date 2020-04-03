@@ -1,6 +1,7 @@
+import cv2
+import matplotlib.pyplot as plt
+import matplotlib.animation as anim
 import numpy as np
-from matplotlib import pyplot as plt
-from matplotlib import animation
 
 def world():
     circle_1 = plt.Circle((5, 5), radius=1, fc='k')
@@ -27,6 +28,12 @@ def world():
     ax.add_patch(rectangle_3)
     return fig
 
+def motionFuntion(rotL, rotR):
+    x = radius/2*(rotL + rotR)*np.cos(np.radians(theta_s))*t
+    y = radius/2*(rotL + rotR)*np.sin(np.radians(theta_s))*t
+    theta = radius/Length*(rotR - rotL)*t
+    return x,y,theta
+
 def init():
 
     patch.center = (sx, sy)
@@ -43,9 +50,6 @@ def animate(i):
         print("goal node reached")
     return patch,
 
-
-
-
 if __name__ == '__main__':
     print("Enter the start point")
     sx, sy = list(map(float, input().split()))
@@ -58,7 +62,7 @@ if __name__ == '__main__':
     fig.set_size_inches(7, 6.5)
     ax = plt.axes(xlim=(-1, 11), ylim=(-1, 11))
     patch = plt.Circle((sx, sy), 0.1, fc='y')
-    anim = animation.FuncAnimation(world(), animate,
+    anim = anim.FuncAnimation(world(), animate,
                                    init_func=init,
                                    frames=360,
                                    interval=50,
