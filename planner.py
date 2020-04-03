@@ -12,6 +12,12 @@ def world():
     rectangle_2 = plt.Rectangle((0.25, 4.25), 1.5, 1.5, fc='k')
     rectangle_3 = plt.Rectangle((8.25, 4.25), 1.5, 1.5, fc='k')
 
+    plt.plot([0, 10],[0,0], 'k',linewidth = 2.0)
+    plt.plot([0, 0], [0, 10], 'k',linewidth = 2.0)
+    plt.plot([0, 10], [10, 10], 'k',linewidth = 2.0)
+    plt.plot([10, 10], [10, 0], 'k',linewidth = 2.0)
+
+
     ax.add_patch(circle_1)
     ax.add_patch(circle_2)
     ax.add_patch(circle_3)
