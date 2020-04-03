@@ -16,6 +16,6 @@ git clone https://github.com/Achalpvyas/Project3_phase_3.git
 cd Project3_phase_3
 python3 planner.py
 ```
-- Enter the coordinates of the start point (sx, sy, theta_s), the coordinates of the goal point (gx, gy), the values of rotation of the wheels (rotationL, rotationR) and clearance (c).
+- Enter the coordinates of the start point ```sx```,```sy```,``` theta_s```, the coordinates of the goal point ```gx```,``` gy```, the values of rotation of the wheels ```rotationL```, ```rotationR``` and ```clearance```.
 
 ## Results
