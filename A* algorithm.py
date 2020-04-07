@@ -31,10 +31,20 @@ def main():
   start_circle = plt.Circle((start_point[0], start_point[1]), radius= radius+clearance, fc='g')
   plt.gca().add_patch(start_circle)
   
-  goal_point = eval(input('Please enter the goal coordinates in this format - [X_coord, Y_coord, Theta]:'))
+  goal_point = eval(input('Please enter the goal coordinates in this format - [X_coord, Y_coord]:'))
   while not a_star_algo.check_node(goal_point, radius+clearance):
-    goal_point = eval(input('Please enter the goal coordinates in this format - [X_coord, Y_coord, Theta]:'))
+    goal_point = eval(input('Please enter the goal coordinates in this format - [X_coord, Y_coord]:'))
   print('The goal point you entered is:', goal_point)
   print('')
   goal_circle = plt.Circle((goal_point[0], goal_point[1]), radius= 1.5,fill=False)
   plt.gca().add_patch(goal_circle)
+  
+  
+   # Taking the 2 wheel RPM values from the user
+  RPM_1 = eval(input('Please enter the first RPM value :'))
+  print('The start point you entered is:', RPM_1)
+  print('')
+
+  RPM_2 = eval(input('Please enter the  RPM value :'))
+  print('The start point you entered is:', RPM_2)
+  print('')
