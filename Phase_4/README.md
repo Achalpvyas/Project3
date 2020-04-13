@@ -52,5 +52,4 @@ roslaunch pathplan turtle_botlauncher.launch x:= <x coordinate> y:= <y coordinat
 ```
 
 ## Results
-- Generated Results
 ![result](https://github.com/Achalpvyas/Project3/blob/master/Phase_4/phase4result.gif)
