@@ -28,6 +28,15 @@ cd ros_ws
 catkin_make
 source devel/setup.bash
 ```
+## Run Instructions
+- Open the terminal
+```
+cd Project3
+cd Phase_4/ros_ws
+roslaunch pathplan turtle_botlauncher.launch x:= <x coordinate> y:= <y coordinate> z:=<z coordinate>
+
+```
+
 
 ### From Compressed zip package
 - Create a workspace folder.
@@ -35,18 +44,18 @@ source devel/setup.bash
 - Open terminal and enter the workspace folder,
 
 ```
-cd Project3
+cd proj3_7_GazeboRos
 cd Phase_4
 cd ros_ws
 catkin_make
 source devel/setup.bash
 ```
 
-## Run Instructions
+## Run Instructions from compressed zip
 - Open terminal and type...
 - values in the ```roslaunch``` arguments are float characters.
 ```
-cd Project3
+cd proj3_7_GazeboRos
 cd Phase_4/ros_ws
 roslaunch pathplan turtle_botlauncher.launch x:= <x coordinate> y:= <y coordinate> z:=<z coordinate>
 ```
