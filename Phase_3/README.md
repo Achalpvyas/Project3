@@ -13,8 +13,8 @@
 Open the terminal 
 ```
 cd <desired directory>
-git clone https://github.com/Achalpvyas/Project3_phase_3.git
-cd Project3_phase_3
+git clone https://github.com/Achalpvyas/Project3.git
+cd Project3/Phase_3
 python3 planner.py
 ```
 - Enter the coordinates of the start point ```sx = -4.5```,```sy = -4.5```,``` theta_s = 30```, the coordinates of the goal point ```gx = 4.5```,``` gy = 4.5```, the values of rotation of the wheels ```rotationL = 10```, ```rotationR = 15``` and ```clearance = 2```.
@@ -25,7 +25,8 @@ python3 planner.py
 - Unzip the folder.
 - Open a terminal,
 ```
-cd proj3_7_simulationSoftware
+cd proj3_7_GazeboRos
+Phase_3
 python3 planner.py
 ```
 ## Results
