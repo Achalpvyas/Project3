@@ -22,12 +22,9 @@ sudo apt-get install ros-kinetic-turtlebot-gazebo
 ### From Repository
 - Open the terminal and type in the following commands.
 ```
-mkdir <workspace>
-cd workspace
-mkdir src
-cd src
 git clone https://github.com/Achalpvyas/Project3.git
-cd ..
+cd Phase_4
+cd ros_ws
 catkin_make
 source devel/setup.bash
 ```
@@ -36,8 +33,11 @@ source devel/setup.bash
 - Create a workspace folder.
 - Extract the zip in the <workspace> folder
 - Open terminal and enter the workspace folder,
+
 ```
-cd <workspace>
+cd Project3
+cd Phase_4
+cd ros_ws
 catkin_make
 source devel/setup.bash
 ```
@@ -46,8 +46,11 @@ source devel/setup.bash
 - Open terminal and type...
 - values in the ```roslaunch``` arguments are float characters.
 ```
-cd <workspace>
+cd Project3
+cd Phase_4/ros_ws
 roslaunch pathplan turtle_botlauncher.launch x:= <x coordinate> y:= <y coordinate> z:=<z coordinate>
 ```
 
 ## Results
+- Generated Results
+![result](https://github.com/Achalpvyas/Project3/blob/master/Phase_4/phase4result.gif)
