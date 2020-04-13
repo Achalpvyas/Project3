@@ -29,4 +29,4 @@ cd proj3_7_simulationSoftware
 python3 planner.py
 ```
 ## Results
-![Results](https://github.com/Achalpvyas/Project3_phase_3/blob/master/ezgif.com-video-to-gif.gif)
+![Results](https://github.com/Achalpvyas/Project3/blob/master/Phase_3/result.gif)
