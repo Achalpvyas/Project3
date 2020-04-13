@@ -9,6 +9,7 @@
 - matplotlib ```pip install matplotlib```
 
 ## Run Instructions
+### From Repository
 Open the terminal 
 ```
 cd <desired directory>
@@ -16,6 +17,16 @@ git clone https://github.com/Achalpvyas/Project3_phase_3.git
 cd Project3_phase_3
 python3 planner.py
 ```
-- Enter the coordinates of the start point ```sx```,```sy```,``` theta_s```, the coordinates of the goal point ```gx```,``` gy```, the values of rotation of the wheels ```rotationL```, ```rotationR``` and ```clearance```.
+- Enter the coordinates of the start point ```sx = -4.5```,```sy = -4.5```,``` theta_s = 30```, the coordinates of the goal point ```gx = 4.5```,``` gy = 4.5```, the values of rotation of the wheels ```rotationL = 10```, ```rotationR = 15``` and ```clearance = 2```.
 
+### From Compressed zip package
+- Download the zip folder.
+- Enter the desired directory.
+- Unzip the folder.
+- Open a terminal,
+```
+cd proj3_7_simulationSoftware
+python3 planner.py
+```
 ## Results
+![Results](https://github.com/Achalpvyas/Project3_phase_3/blob/master/ezgif.com-video-to-gif.gif)
