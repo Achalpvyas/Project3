@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	
+	<include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+    	<arg name="world_file" value="$(find pathplan)/worlds/map_que.world.xacro"/>
+	</include>
+	<!-- <node pkg="planner" name="walker" type="walker" output="screen"/> -->
+	<arg name="x" default="0"/>
+    <arg name="y" default="0"/>
+    <arg name="z" default="0"/>
+	<node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+		args="-urdf -param robot_description -model planner -x $(arg x) -y $(arg y) -z $(arg z)"/>
+    <node 
+    	name = "planner" 
+    	pkg = "pathplan" 
+    	type = "motion.py"
+    	
+  	/> 
+        
+
+</launch>
